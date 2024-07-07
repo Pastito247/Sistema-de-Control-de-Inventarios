@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Control de Inventarios</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Control de Inventarios</h1>
+    </header>
+    <main>
+        <section id="registro-inventario">
+            <h2>Registro de Inventario</h2>
+            <form id="inventario-form">
+                <input type="hidden" id="item-id">
+                <label for="descripcion">Descripción:</label>
+                <input type="text" id="descripcion" name="descripcion" required>
+                <label for="numero-serie">Número de Serie:</label>
+                <input type="text" id="numero-serie" name="numero-serie" required>
+                <label for="ubicacion">Ubicación:</label>
+                <input type="text" id="ubicacion" name="ubicacion" required>
+                <button type="submit">Registrar</button>
+                <button type="button" id="cancelar-edicion" style="display: none;">Cancelar</button>
+            </form>
+        </section>
+        <section id="seguimiento-movimientos">
+            <h2>Seguimiento de Movimientos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descripción</th>
+                        <th>Número de Serie</th>
+                        <th>Ubicación</th>
+                        <th>Fecha</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Filas de movimientos de inventario se agregarán aquí -->
+                </tbody>
+            </table>
+        </section>
+        <section id="alertas-stock">
+            <h2>Alertas de Stock Bajo</h2>
+            <ul>
+                <!-- Alertas de stock bajo se agregarán aquí -->
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
